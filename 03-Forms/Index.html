@@ -7,5 +7,40 @@
 </head>
 <body>
     <h1>Forms</h1>
+    <form action="nadler.php" method="get">
+    <div>
+
+        <label for="first_name"> Name:</label>
+        <input type="text" placeholder="Введите ваше имя" name="first_name"
+               id="first_name" required
+               size="25"
+               minlength="3" maxlength="8"
+               pattern="^[A-Z]\w*">
+    </div>
+    <div>
+        <label for="passwd">Password:</label>
+        <input type="password" placeholder="Введите ваш пароль :" name="password"
+               id="password"
+               size="25"
+               minlength="5" maxlength="32">
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="Введите вашу почту :" name="email"
+               id="email"
+               size="25"
+               minlength="5" maxlength="32"
+               >
+    </div>
+        <div>
+        <label for="phone">Phone:</label>
+        <input type="" placeholder="Введите ваш телефон :" name="email"
+               id="email"
+               size="25"
+               minlength="5" maxlength="32"
+               >
+    </div>
+    
+</form>
 </body>
 </html>
