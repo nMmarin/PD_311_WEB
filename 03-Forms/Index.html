@@ -3,44 +3,115 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>Forms</title>
 </head>
 <body>
     <h1>Forms</h1>
-    <form action="nadler.php" method="get">
-    <div>
-
-        <label for="first_name"> Name:</label>
-        <input type="text" placeholder="Введите ваше имя" name="first_name"
-               id="first_name" required
-               size="25"
-               minlength="3" maxlength="8"
-               pattern="^[A-Z]\w*">
-    </div>
-    <div>
-        <label for="passwd">Password:</label>
-        <input type="password" placeholder="Введите ваш пароль :" name="password"
-               id="password"
-               size="25"
-               minlength="5" maxlength="32">
-    </div>
-    <div>
-        <label for="email">E-mail:</label>
-        <input type="email" placeholder="Введите вашу почту :" name="email"
-               id="email"
-               size="25"
-               minlength="5" maxlength="32"
-               >
-    </div>
+    <form action="nadler.php" method="post">
         <div>
-        <label for="phone">Phone:</label>
-        <input type="" placeholder="Введите ваш телефон :" name="email"
-               id="email"
-               size="25"
-               minlength="5" maxlength="32"
-               >
-    </div>
-    
-</form>
+
+            <label for="first_name"> Name:</label>
+            <input type="text" placeholder="Введите ваше имя" name="first_name"
+                   id="first_name" required
+                   size="25"
+                   minlength="3" maxlength="8"
+                   pattern="^[A-Z]\w*">
+        </div>
+        <div>
+            <label for="passwd">Password:</label>
+            <input type="password" placeholder="Введите ваш пароль :" name="password"
+                   id="password"
+                   size="25"
+                   minlength="5" maxlength="32">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Введите вашу почту :" name="email"
+                   id="email"
+                   size="25"
+                   minlength="5" maxlength="32">
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" placeholder="Введите ваш телефон :" name="phone"
+                   id="phone"
+                   size="25"
+                   minlength="5" maxlength="32">
+        </div>
+        <div>
+            <label for="birth_date">Ваша дата рождения:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="brief">Пару слов о себе: </label><br>
+            <textarea name="brief" id="brief" placeholder=""></textarea>
+        </div>
+        <div>
+            <img src="img\16599699153437.jpg" width="150" height="200"> <br>
+            <label for="photo">Выберите фото</label>
+            <input type="file" accept="image/*">
+        </div>
+        <div>
+            <label for="color">Выберите Ваш любимый цвет:</label>
+            <input type="color">
+        </div>
+
+        <fieldset>
+            <legend>Какие языки Вы знаете?</legend>
+            <div><input type="checkbox" id="Russian">    <label for="Russian">Русский</label>        </div>
+            <div><input type="checkbox" id="English">    <label for="English">English</label>        </div>
+            <div><input type="checkbox" id="Deutsche">   <label for="Deutsche"> Deutsche</label>     </div>
+            <div><input type="checkbox" id="Italiano">   <label for="Italiano"> Italiano</label>     </div>
+            <div><input type="checkbox" id="Espanol">    <label for="Espanol"> Espanol</label>       </div>
+            <div><input type="checkbox" id="Chinese">    <label for="Chinese">Chinese</label>        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите форму обучения</legend>
+           <input type="radio" name="learning-form" id="stacionar">      <label for="stacionar">     Стационар       </label>  <br>
+           <input type="radio" name="learning-form" id="semistacionar">  <label for="semistacionar"> Полустационар   </label>  <br>
+           <input type="radio" name="learning-form" id="year-courses">   <label for="year-courses">  Годичные курсы  </label>  <br>
+        </fieldset>
+        <div>
+         <label for="direction">Выберите направление обучения:</label><br>
+            <select name="direction" id="direction">
+            <option disabled selected> --- Выберите специальность --- </option>
+            <option value="Rpo">РПО</option>
+            <option value="Metworks">Сети</option>
+            <option value="Graphics">Графика</option>
+            <option value="Java">Java</option>
+            <option value="Android">Android</option>
+            <option value="GameDev">GameDev</option>
+            <option value="WebDev">WebDev</option>
+            <option value="FrontEnd">FrontEnd</option>
+            <option value="BackEnd">BackEnd</option>
+            </select>
+        </div>
+        <div>
+            <label for="weekdays">Выберите дни недели</label><br>
+            <select multiple name="weekdays" id="weekdays">
+                <option disabled selected>Выберите дни недели</option>
+                <option value="Monday">Понедельник</option>
+                <option value="Tuesday">Вторник</option>
+                <option value="Wednsday">Среда</option>
+                <option value="Thrusday">Четверг</option>
+                <option value="Friday">Пятница</option>
+                <option value="Saturday">Суббота</option>
+                <option value="Sunday">Воскресенье</option>
+            </select>
+        </div>
+        <div>
+            <label for="learning-time" >Выберите время обучения:</label>
+            <input type="time">
+        </div>
+        <div>
+            <label for="meeting">Выберите удобное для Вас время встречи:</label><br />
+            <input type="datetime-local" name="meeting" id="meeting">
+        </div>
+        <div>
+
+        </div>
+        
+    </form>
 </body>
 </html>

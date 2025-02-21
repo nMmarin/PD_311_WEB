@@ -1,0 +1,29 @@
+﻿body
+{
+}
+textarea
+{
+    width:323px;
+    height:150px;
+    resize: none;
+}
+fieldset
+{
+    width:300px;
+}
+fieldset
+{
+    width:300px;
+}
+select
+{
+    width:330px;
+}
+option[disabled]
+{
+    text-align:center;
+}
+select[multiple] 
+{
+    height: 144px;
+}
